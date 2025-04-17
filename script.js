@@ -179,10 +179,89 @@
 
 // --------------------------------------------
 
-function confuseReader(){
-    x= "Guess my scope ";
-    console.log("Indside the function : ",x);
-}
+// function confuseReader(){
+//     x= "Guess my scope ";
+//     console.log("Indside the function : ",x);
+// }
 
-confuseReader();
-console.log("Outside thee function : ",x);
+// confuseReader();
+// console.log("Outside thee function : ",x);
+
+// ----------------------
+
+//Immediately Invoked Function Expression
+
+// (function(){
+//     console.log("IIFE!"); //Immediately Invoked Function Expression.
+// })()
+
+
+// (()=>{
+//     console.log("IIFE!"); //Immediately Invoked Function Expression.
+// })()
+
+
+// ----------- RECURSION ----------
+// function getRecursive(n){
+//     console.log(n);
+//     if(n>0){
+//         getRecursive(--n);
+//     } 
+// }
+// getRecursive(3);
+
+// function getRecursive(n){
+//     if(n>0){
+//         getRecursive(--n);
+//     } 
+//     console.log(n);
+// }
+// getRecursive(3);
+
+// function rec(x){
+//     console.log("started ", x);
+//     if(x>0){
+//         rec(x-1);
+//     }
+//     else{
+//         console.log("done with recurrsion");
+//     }
+//     console.log("Ended ",x);
+// }
+// rec(3);
+
+//the performance of recursion is slightly worse than the performance of regular iteration of loop .
+
+//--------------  NESTED FUNCTION   ---------
+// function outer(n){
+//     console.log("Outer function");
+    // function inner(x){
+//         console.log(x+53);
+//         console.log("the value of outer function is",x);
+//     }
+// }
+// outer(2);
+
+
+// ANONUMUS FUNCTION
+
+// let funVar = function(){
+//     console.log("Hoiii");
+// }
+
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("Inside another function ");
+// }
+// doFlexibleStuff(funVar);
+
+// let youGot = function(){
+//     console.log("You are gpood");
+// };
+// setTimeout(youGot,2000);  //used for delay execution.
+
+
+// let youGot = function(){
+//     console.log("You are gpood");
+// };
+// setInterval(youGot,100);  //used for frequency execution.
