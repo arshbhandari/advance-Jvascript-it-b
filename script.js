@@ -265,3 +265,5 @@
 //     console.log("You are gpood");
 // };
 // setInterval(youGot,100);  //used for frequency execution.
+
+
